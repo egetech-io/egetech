@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EGE Tech Prep — Главная</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">EGE Tech Prep</div>
+      <nav class="nav">
+        <a href="bank.html">Банк заданий</a>
+        <a href="tests.html">Тесты</a>
+        <a href="variants.html">Варианты</a>
+      </nav>
+      <div class="profile">
+        <button class="btn-ghost">Войти</button>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+      <img class="hero-decor" src="/mnt/data/e8943ce5-ca75-491c-a901-fe415107eedf.png" alt="decorative sample (you can replace)" />
+      <div class="container hero-inner">
+        <h1 class="hero-title">Подготовка к ЕГЭ по математике и физике</h1>
+        <p class="hero-sub">Практические задания, тесты и полноформатные варианты. Тренируйся как на настоящем экзамене.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="bank.html">Начать — Банк заданий</a>
+          <a class="btn-outline" href="tests.html">Короткий тест</a>
+        </div>
+      </div>
+
+      <!-- floating shapes (pure CSS) -->
+      <div class="shapes">
+        <span class="shape s1"></span>
+        <span class="shape s2"></span>
+        <span class="shape s3"></span>
+        <span class="shape s4"></span>
+        <span class="shape s5"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="cards-row">
+      <article class="card card-blue tilt">
+        <div class="card-inner">
+          <h3>Банк заданий</h3>
+          <p>Фильтрация по темам, уровню сложности и подготовительные задания.</p>
+          <a class="card-link" href="bank.html">Перейти</a>
+        </div>
+      </article>
+
+      <article class="card card-amber tilt">
+        <div class="card-inner">
+          <h3>Тесты</h3>
+          <p>Короткие тесты по темам с автоматической проверкой.</p>
+          <a class="card-link" href="tests.html">Пройти тест</a>
+        </div>
+      </article>
+
+      <article class="card card-violet tilt">
+        <div class="card-inner">
+          <h3>Варианты</h3>
+          <p>Полноформатные экзаменационные варианты с таймером и сохранением результатов.</p>
+          <a class="card-link" href="variants.html">Попробовать вариант</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h4>MathJax и формулы</h4>
+        <p>Поддержка красивой отрисовки математических выражений.</p>
+      </div>
+      <div class="feature">
+        <h4>Аналитика прогресса</h4>
+        <p>Статистика по темам и история попыток.</p>
+      </div>
+      <div class="feature">
+        <h4>Адаптивный дизайн</h4>
+        <p>Хорошо смотрится на планшетах и мобильных устройствах.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>EGE Tech Prep</strong> — подготовка к ЕГЭ</div>
+      <div class="footer-links">
+        <a href="bank.html">Банк заданий</a>
+        <a href="tests.html">Тесты</a>
+        <a href="variants.html">Варианты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Небольшая интерактивность: плавное скольжение к карточкам при клике на CTA
+    document.querySelectorAll('.btn-primary, .btn-outline').forEach(btn=>{
+      btn.addEventListener('click', (e)=>{
+        // стандартно переходит по ссылке; можно добавить smooth-scroll если нужно
+      });
+    });
+  </script>
+</body>
+</html>
